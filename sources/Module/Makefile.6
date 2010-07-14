@@ -5,9 +5,9 @@
 #PLATFORM=PC
 PLATFORM=CMPC
 
-TS=7800
+# TS=7800
 #TS=73x0
-#TS=7500
+TS=7500
 #TS=7400-26
 
 ifeq ($(TS),7800)
@@ -23,8 +23,8 @@ CC := /tscrosstool/ts7800-crosstool-linux-gnueabi-2005q3-2-gcc3.4.4/arm-none-lin
 endif
 
 ifeq ($(TS),7500)
-KERNEL_SOURCE = /tskernel/ts-7500/dist/linux-2.6.24-cavium
-CC := /tscrosstool/crosstool-linux-arm-uclibc-3.4.6/arm-uclibc-3.4.6/bin/arm-linux-gcc
+KERNEL_SOURCE = /home/workspace/plaquinhas/kernel/linux-2.6.24-cavium
+CC := /home/workspace/plaquinhas/kernel/arm-uclibc-3.4.6/bin/arm-linux-gcc
 endif
 
 ifeq ($(TS),7400-26)
